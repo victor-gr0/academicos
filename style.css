@@ -1,5 +1,6 @@
 #contato {
     background-color: #7bbcc4;
+    
 }
 .alinhamento {
     text-align: center;
@@ -13,6 +14,44 @@
     text-align: center;
     background-color: burlywood;
 }
-#links {
+
+html, body, .carrossel {
+    height: 100%;
+}
+input { 
+    display: none;
+}
+.carrossel{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.carrossel-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: 0.5s;
+}
+.carrossel-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.carrossel-controls {
+    height: 100%;
+    justify-content: flex-end;
+}
+.carrossel-controls, .dots{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+label {
+    position: relative;
     
 }
